@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="dummy_text">Permainan Game Suit Antar Pemain atau Komputer</string>
+    <string name="pexels">Pexels</string>
+
+    <string name="app_name" tools:ignore="DuplicateDefinition">OnBoardingScreen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="batu_gunting_kertas">BATU GUNTING KERTAS</string>
+    <string name="bermain_dengan_sesama_pemain"><![CDATA[Bermain dengan Sesama Pemain]]></string>
+    <string name="kawi_bawi_bo">KAWIBAWIBO</string>
+    <string name="bermain_lawan_komputer"><![CDATA[Bermain lawan Komputer]]></string>
+    <string name="on_board_str_skip">Skip</string>
+    <string name="on_board_str_get_stard">Get started</string>
+    <string name="on_board_str_back">Back</string>
+
+    <string name="pemain__memilih">Pemain dapat bermain dengan teman terdekat.</string>
+    <string name="bermain_dengan_computer">Pemain dapat bermain dengan computer untuk menguji kehandalan bermain.</string>
+    <string name="siap_bermain">Sudah tentukan pilihan bermain</string>
+    <string name="on_board_str_get_started" />
+    <string name="onboards">OnBoardingScreen</string>
+</resources>

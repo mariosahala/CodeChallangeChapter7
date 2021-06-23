@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.video.VideoActivity">
+
+    <View
+        android:id="@+id/vLineAtas"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/yellow_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrowback"
+        app:layout_constraintBottom_toBottomOf="@id/vLineAtas"
+        app:layout_constraintStart_toStartOf="@id/vLineAtas"
+        app:layout_constraintTop_toTopOf="@id/vLineAtas" />
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/video_box"
+        android:backgroundTint="@color/yellow_dark"
+        android:padding="10dp"
+        android:text="Watch to get some tips to win!"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/comicboldneue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vLineAtas"
+        app:layout_constraintEnd_toEndOf="@id/vLineAtas"
+        tools:ignore="HardcodedText" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="380dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@id/tvMsg"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@id/tvMsg"
+        app:layout_constraintTop_toTopOf="@id/tvMsg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

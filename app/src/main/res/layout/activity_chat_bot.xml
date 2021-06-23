@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.chatbot.ChatBotActivity"
+    tools:ignore="Overdraw">
+
+    <View
+        android:id="@+id/vLineAtas"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/yellow_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrowback"
+        app:layout_constraintBottom_toBottomOf="@id/vLineAtas"
+        app:layout_constraintStart_toStartOf="@id/vLineAtas"
+        app:layout_constraintTop_toTopOf="@id/vLineAtas" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/vLineBawah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vLineAtas"
+        app:layout_constraintVertical_bias="0.343"
+        tools:listitem="@layout/chatbot_item" />
+
+    <View
+        android:id="@+id/vLineBawah"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="204dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etPesanUser"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/black_mid_button_custom"
+        android:backgroundTint="@color/white"
+        android:hint="tulis pesan..."
+        android:inputType="textShortMessage"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/vLineBawah"
+        app:layout_constraintStart_toStartOf="@id/vLineBawah"
+        app:layout_constraintTop_toTopOf="@id/vLineBawah" />
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/mid_button_custom"
+        android:backgroundTint="@color/yellow_dark"
+        android:text="Kirim"
+        app:layout_constraintBottom_toBottomOf="@id/vLineBawah"
+        app:layout_constraintEnd_toEndOf="@id/vLineBawah"
+        app:layout_constraintTop_toTopOf="@id/vLineBawah"
+        app:layout_constraintVertical_bias="0.518"
+        tools:ignore="HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

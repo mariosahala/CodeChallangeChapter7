@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIME'S UP"
+        android:fontFamily="@font/comicboldneue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:fontFamily="@font/comicboldneue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHasil"/>
+
+
+    <Button
+        android:id="@+id/btnMain"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/comicboldneue"
+        android:textColor="@color/black"
+        android:background="@drawable/black_mid_button_custom"
+        android:backgroundTint="@color/yellow"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"/>
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu"
+        android:background="@drawable/black_mid_button_custom"
+        android:fontFamily="@font/comicboldneue"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/yellow_dark"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMain"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
